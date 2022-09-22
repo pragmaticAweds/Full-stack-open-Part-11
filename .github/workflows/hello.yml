@@ -12,11 +12,18 @@ jobs:
       - name: Say hello
         run: |
           echo  "Hello World!"
+
+name: Hello World!
+
+on:
+  push:
+    branches:
+      - main
+
+jobs: 
+  date_job:
+    runs-on: ubuntu-20.04
     steps:
       - name: Now it is
         run: |
           date
-    steps:
-      - name: Directory_Content
-        run: |
-          ls -l
